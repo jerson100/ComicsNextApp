@@ -3,7 +3,7 @@
   "NAME_APP": "ComicApp",
   "NAME_HOME_PAGE": "Página Principal",
   "SEARCH_RESULT_TITLE": "${1} Resultado para ${2} |||| ${1} Resultados para ${2}",
-  "META_HOME_DESCRIPTION": "ComicApp is a web application that allows you to read comics online for free.",
+  "META_HOME_DESCRIPTION": "ComicApp es una aplicación web que permite leer cómics en línea de forma gratuita.",
   "NEXT": "Siguiente",
   "PREVIOUS": "Anterior"
 }
