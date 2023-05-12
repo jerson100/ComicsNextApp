@@ -1,0 +1,9 @@
+{
+  "LATEST_COMICS": "Latest Comics",
+  "NAME_APP": "ComicApp",
+  "NAME_HOME_PAGE": "Home",
+  "SEARCH_RESULT_TITLE": "${1} Result for ${2} |||| ${1} Results for ${2}",
+  "META_HOME_DESCRIPTION": "ComicApp es una aplicación web que permite leer cómics en línea de forma gratuita.",
+  "NEXT": "Next",
+  "PREVIOUS": "Previous"
+}
