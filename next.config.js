@@ -5,6 +5,9 @@ const nextConfig = {
     locales: ["en", "es"],
     defaultLocale: "en",
   },
+  images: {
+    domains: ["imgs.xkcd.com"],
+  },
 };
 
 //comic/120 -> en - default

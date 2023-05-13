@@ -5,6 +5,7 @@ import OffCanvas from "../OffCanvas";
 import { Circles } from "react-loader-spinner";
 import useDebounce from "hooks/useDebounce";
 import useIdiomaContext from "@/hooks/useIdiomaContext";
+import Image from "next/image";
 
 const Search = () => {
   const { t } = useIdiomaContext();
@@ -104,10 +105,22 @@ const Search = () => {
                     <li key={pic.num} className="w-full">
                       <Link
                         href={`/comic/${pic.num}`}
-                        className="hover:bg-blue-100 block transition-all p-2 whitespace-nowrap overflow-hidden text-ellipsis"
+                        className="hover:bg-blue-100 flex items-center gap-2 transition-all p-2"
                         onClick={() => setShowOffCanvas(false)}
                       >
-                        {pic.title}
+                        <div className="w-8 h-8">
+                          <Image
+                            src={pic.img}
+                            width={32}
+                            height={32}
+                            alt={pic.alt}
+                            className="rounded-full w-full h-full"
+                          />
+                          {/* <img src={pic.img} className="w-full h-full" /> */}
+                        </div>
+                        <p className="whitespace-nowrap overflow-hidden text-ellipsis">
+                          {pic.title}
+                        </p>
                       </Link>
                     </li>
                   ))}
