@@ -20,16 +20,16 @@ const Index = ({ comics, q }: { comics: Comic[]; q: string }) => {
           content={t("SEARCH_RESULT_TITLE", options, `${comics.length}`, q)}
         />
       </Head>
-      <h1 className="mb-4 font-bold text-2xl">
+      <h1 className="mb-12 font-bold text-2xl text-center">
         {t("SEARCH_RESULT_TITLE", options, `${comics.length}`, q)}
       </h1>
-      <ul className="flex flex-col bg-blue-200">
+      <ul className="flex flex-col gap-4">
         {comics.map((comic) => (
-          <li key={comic.num}>
-            <Link
-              href={`/comic/${comic.num}`}
-              className="hover:bg-blue-100 block transition-all p-2"
-            >
+          <li
+            key={comic.num}
+            className="bg-white hover:bg-stone-200 block transition-all rounded-lg border border-stone-200"
+          >
+            <Link href={`/comic/${comic.num}`} className="block p-2">
               <article className="flex gap-4 items-center">
                 <img
                   src={comic.img}
