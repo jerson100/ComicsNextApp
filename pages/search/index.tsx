@@ -6,7 +6,7 @@ import Head from "next/head";
 import Link from "next/link";
 import React from "react";
 
-const index = ({ comics, q }: { comics: Comic[]; q: string }) => {
+const Index = ({ comics, q }: { comics: Comic[]; q: string }) => {
   const { t } = useIdiomaContext();
   const options = {
     count: comics.length === 0 || comics.length > 1 ? 2 : 1,
@@ -58,4 +58,4 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   };
 };
 
-export default index;
+export default Index;
