@@ -24,6 +24,11 @@ export interface LenguageText {
   META_HOME_DESCRIPTION: string;
   NEXT: string;
   PREVIOUS: string;
+  SEARCH: string;
+  LOADING: string;
+  NO_RESULTS_FOUND: string;
+  ERROR_SEARCH: string;
+  SHOW_COUNT_RESULTS: string;
 }
 
 export interface TProps {

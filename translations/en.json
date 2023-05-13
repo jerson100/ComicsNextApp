@@ -5,5 +5,10 @@
   "SEARCH_RESULT_TITLE": "${1} Result for ${2} |||| ${1} Results for ${2}",
   "META_HOME_DESCRIPTION": "ComicApp is a web application that allows you to read comics online for free.",
   "NEXT": "Next",
-  "PREVIOUS": "Previous"
+  "PREVIOUS": "Previous",
+  "SEARCH": "Search",
+  "LOADING": "Loading...",
+  "NO_RESULTS_FOUND": "No results found",
+  "ERROR_SEARCH": "An error occurred while searching",
+  "SHOW_COUNT_RESULTS": "Show ${1} result |||| Show ${1} results"
 }

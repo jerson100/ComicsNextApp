@@ -5,5 +5,10 @@
   "SEARCH_RESULT_TITLE": "${1} Resultado para ${2} |||| ${1} Resultados para ${2}",
   "META_HOME_DESCRIPTION": "ComicApp es una aplicación web que permite leer cómics en línea de forma gratuita.",
   "NEXT": "Siguiente",
-  "PREVIOUS": "Anterior"
+  "PREVIOUS": "Anterior",
+  "SEARCH": "Buscar",
+  "LOADING": "Cargando...",
+  "NO_RESULTS_FOUND": "No se encontraron resultados",
+  "ERROR_SEARCH": "Ocurrió un error al buscar",
+  "SHOW_COUNT_RESULTS": "Mostrar ${1} resultado |||| Mostrar ${1} resultados"
 }

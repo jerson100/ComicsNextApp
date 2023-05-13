@@ -4,8 +4,10 @@ import { Comic } from "types";
 import OffCanvas from "../OffCanvas";
 import { Circles } from "react-loader-spinner";
 import useDebounce from "hooks/useDebounce";
+import useIdiomaContext from "@/hooks/useIdiomaContext";
 
 const Search = () => {
+  const { t } = useIdiomaContext();
   const [pics, setPics] = useState<Comic[]>([]);
   const [loading, setLoading] = useState(false);
   const [input, setInput] = useState("");
@@ -60,7 +62,7 @@ const Search = () => {
           autoComplete="off"
           onChange={handleChange}
           onFocus={() => setShowOffCanvas(true)}
-          placeholder="Search"
+          placeholder={t("SEARCH")}
           className={`relative border-2 border-stone-200 focus:outline-none focus:border-blue-500 rounded-full px-4 py-2 w-full ${
             showOffCanvas ? "z-20" : ""
           }`}
@@ -77,9 +79,7 @@ const Search = () => {
                     <Circles color="#00BFFF" height={50} />
                   ) : (
                     <p className="px-4 text-center">
-                      {error
-                        ? "Ocurrió un error al buscar"
-                        : "No se encontraron resultados"}
+                      {error ? t("ERROR_SEARCH") : t("NO_RESULTS_FOUND")}
                     </p>
                   )}
                 </div>
@@ -91,7 +91,13 @@ const Search = () => {
                       className="hover:bg-blue-100 block transition-all p-2 whitespace-nowrap overflow-hidden text-ellipsis"
                       onClick={() => setShowOffCanvas(false)}
                     >
-                      Ver {pics.length} resultados
+                      {t(
+                        "SHOW_COUNT_RESULTS",
+                        {
+                          count: pics.length == 1 ? 1 : 2,
+                        },
+                        pics.length.toString()
+                      )}
                     </Link>
                   </li>
                   {pics.map((pic) => (
