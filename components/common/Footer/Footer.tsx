@@ -6,7 +6,7 @@ const Footer = () => {
   const { t } = useIdiomaContext();
   return (
     <footer className="text-center p-4">
-      {t("FOOTER_COPYRIGHT")}{" "}
+      {t("FOOTER_COPYRIGHT")}
       <Link
         href="https://xkcd.com/"
         target="_blank"

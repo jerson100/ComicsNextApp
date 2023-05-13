@@ -21,7 +21,7 @@ export default function Home({ comics }: HomeProps) {
       <h2 className="mb-12 text-3xl text-center font-bold">
         {t("LATEST_COMICS")}
       </h2>
-      <ul className="list-none grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <ul className="list-none grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {comics.map((comic) => (
           <Comic key={comic.num} {...comic} />
         ))}
