@@ -10,5 +10,6 @@
   "LOADING": "Loading...",
   "NO_RESULTS_FOUND": "No results found",
   "ERROR_SEARCH": "An error occurred while searching",
-  "SHOW_COUNT_RESULTS": "Show ${1} result |||| Show ${1} results"
+  "SHOW_COUNT_RESULTS": "Show ${1} result |||| Show ${1} results",
+  "FOOTER_COPYRIGHT": "All commics by"
 }

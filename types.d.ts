@@ -29,6 +29,7 @@ export interface LenguageText {
   NO_RESULTS_FOUND: string;
   ERROR_SEARCH: string;
   SHOW_COUNT_RESULTS: string;
+  FOOTER_COPYRIGHT: string;
 }
 
 export interface TProps {

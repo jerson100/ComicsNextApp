@@ -10,5 +10,6 @@
   "LOADING": "Cargando...",
   "NO_RESULTS_FOUND": "No se encontraron resultados",
   "ERROR_SEARCH": "Ocurrió un error al buscar",
-  "SHOW_COUNT_RESULTS": "Mostrar ${1} resultado |||| Mostrar ${1} resultados"
+  "SHOW_COUNT_RESULTS": "Mostrar ${1} resultado |||| Mostrar ${1} resultados",
+  "FOOTER_COPYRIGHT": "Todos los cómics de"
 }
