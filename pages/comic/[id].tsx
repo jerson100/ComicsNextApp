@@ -52,13 +52,12 @@ export const getStaticPaths: GetStaticPaths = async ({ locales }) => {
   const directories = await fs.readdir("data");
   const paths = locales
     ? locales.reduce<IPaths[]>((previousLocale, currentLocale) => {
-        previousLocale.concat(
+        return previousLocale.concat(
           directories.map((d) => ({
             params: { id: d.replace(".json", "") },
             locale: currentLocale,
           }))
         );
-        return previousLocale;
       }, [])
     : [];
   return {
