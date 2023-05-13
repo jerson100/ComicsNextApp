@@ -10,7 +10,7 @@ const countryImages = {
 };
 
 const Locales = () => {
-  const { locale, locales } = useRouter();
+  const { locale, locales, asPath } = useRouter();
   const [show, setShow] = useState(false);
   const close = useCallback(() => {
     setShow(false);
@@ -39,7 +39,7 @@ const Locales = () => {
             {availableLocales.map((l) => (
               <Locale
                 locale={l}
-                to="/"
+                to={`/${l}${asPath}`}
                 key={l}
                 image={countryImages[l as "en" | "es"]}
                 close={close}
